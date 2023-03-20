@@ -10,14 +10,15 @@
 <html lang="zxx">
 
 <head>
+  <meta name="mywebclass" content="This is an educational website design for students and instructors.">
   <meta charset="utf-8">
   <title>My Web Class</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <!-- theme meta -->
-  <meta name="theme-name" content="godocs" />
+  
+  
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- plugins -->
@@ -71,7 +72,7 @@
   <div class=container>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <a class=navbar-brand href="index.html"><h3 class="card-title h4">MyWebClass</h3></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+      <button id="home" class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-align-right h4 text-dark"></i></button>
       <div class="collapse navbar-collapse text-center" id=navigation>
         <ul class="navbar-nav mx-auto align-items-center">
@@ -95,7 +96,7 @@
             <i class="card-icon ti-panel mb-4"></i>
             <h3 class="card-title h4">Section 1</h3>
             <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
-            <a href="list.html" class="stretched-link"></a>
+            <a href="list.html" aria-label="Read more about Section 1" class="stretched-link"></a>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@
             <i class="card-icon ti-credit-card mb-4"></i>
             <h3 class="card-title h4">Section 2</h3>
             <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
-            <a href="list.html" class="stretched-link"></a>
+            <a href="list.html" aria-label="Read more about Section 2" class="stretched-link"></a>
           </div>
         </div>
       </div>
@@ -117,7 +118,7 @@
             <i class="card-icon ti-package mb-4"></i>
             <h3 class="card-title h4">Section 3</h3>
             <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
-            <a href="list.html" class="stretched-link"></a>
+            <a href="list.html" aria-label="Read more about Section 3" class="stretched-link"></a>
           </div>
         </div>
       </div>
@@ -128,7 +129,7 @@
             <i class="card-icon ti-settings mb-4"></i>
             <h3 class="card-title h4">Section 4</h3>
             <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
-            <a href="list.html" class="stretched-link"></a>
+            <a href="list.html" aria-label="Read more about Section 4" class="stretched-link"></a>
           </div>
         </div>
       </div>
@@ -154,10 +155,10 @@
       </div>
       <div class="col-lg-4">
         <ul class="list-inline social-icons text-lg-right text-center">
-          <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="#" aria-label="Follow us on Facebook"><i class="ti-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" aria-label="Follow us on Twitter"><i class="ti-twitter-alt"></i></a></li>
+          <li class="list-inline-item"><a href="#" aria-label="Follow us on GitHub"><i class="ti-github"></i></a></li>
+          <li class="list-inline-item"><a href="#" aria-label="Follow us on LinkdIn"><i class="ti-linkedin"></i></a></li>
         </ul>
       </div>
     </div>

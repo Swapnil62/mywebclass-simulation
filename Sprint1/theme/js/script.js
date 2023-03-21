@@ -76,5 +76,34 @@
 	}).on('hidden.bs.collapse', function () {
 		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
 	});
+	
+	// GDPR
+	function initializeGDPRModal() {
+	  const gdprModal = $('#gdpr-modal');
 
+	  // Check if the user has already agreed to the policy
+	  const agreed = localStorage.getItem('gdprPolicyAgreed') === 'true';
+	  if (!agreed) {
+	    // Show the modal if the user hasn't agreed
+	    gdprModal.modal('show');
+	  }
+
+	  // Handle the click event on the Agree button
+	  const agreeButton = $('#gdpr-agree');
+	  agreeButton.on('click', function() {
+	    // Check if the user has agreed to the policy
+	    const gdprCheck = $('#gdpr-check');
+	    if (gdprCheck.prop('checked')) {
+	      // Remember the user's choice
+	      localStorage.setItem('gdprPolicyAgreed', 'true');
+	      // Hide the modal
+	      gdprModal.modal('hide');
+	      // Enable Google Analytics tracking
+	      gtag('consent', 'update', {
+		analytics_storage: 'granted'
+	      });
+	    }
+	  });
+	}
+	
 })(jQuery);

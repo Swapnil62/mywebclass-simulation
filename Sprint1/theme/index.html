@@ -27,6 +27,8 @@
   <!--Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Add the language selector API -->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
  <script src="js/gdpr.js"></script>
 </head>
@@ -86,7 +88,13 @@
         <ul class="navbar-nav mx-auto align-items-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="list.html">Inner Page</a></li>
+                <!-- Add the language selector -->
+
         </ul>
+        <span class="navbar-text">
+          <!-- Add the language selector -->
+          <div id="google_translate_element"></div>
+        </span>
       </div>
     </nav>
   </div>
@@ -186,6 +194,12 @@
 <!-- Main Script -->
 <script src="js/script.js"></script>
 
+<!-- Initialize the Google Translate API -->
+<script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+</script>
 <script>
   $(document).ready(function() {
     $('#gdpr-modal').modal('show');

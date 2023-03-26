@@ -1,19 +1,21 @@
 const { test, expect } = require('@playwright/test');
 
 test('Responsive HomePage Test', async ({ page }) => {
-
+  // Go to the URL
   await page.goto('https://swapnil62.github.io/mywebclass-simulation/Sprint1/theme/index.html');
-  await page.getByLabel('I agree to the GDPR Policy and Google Analytics policy.').check();
-  await page.waitForTimeout(1000); // Wait for 1 seconds
-  await page.getByRole('button', { name: 'Agree', exact: true }).click();
 
+  // Wait for the page to load
+  await page.waitForLoadState();
+
+  // Check that the page is responsive to small screen size
   await page.setViewportSize({ width: 375, height: 667 });
-  await page.waitForTimeout(2000); // Wait for 2 seconds
+  expect(await page.$eval('header', el => el.offsetHeight)).toBeGreaterThan(0);
 
+  // Check that the page is responsive to medium screen size
   await page.setViewportSize({ width: 768, height: 1024 });
-  await page.waitForTimeout(2000); // Wait for 2 seconds
+  expect(await page.$eval('header', el => el.offsetHeight)).toBeGreaterThan(0);
 
+  // Check that the page is responsive to large screen size
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.waitForTimeout(2000); // Wait for 2 seconds
-
+  expect(await page.$eval('header', el => el.offsetHeight)).toBeGreaterThan(0);
 });

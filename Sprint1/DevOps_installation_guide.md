@@ -1,6 +1,6 @@
 ## Installation Guide for My Web Class Simulation project
 
-This guide provides step-by-step instructions for installing Project X on your local computer. Please make sure that you have the following prerequisites installed before proceeding:
+This guide provides step-by-step instructions for installing MyWebClass project on your local computer. Please make sure that you have the following prerequisites installed before proceeding:
 
 - Git should be installed on your system. You can download it from [here](https://git-scm.com/downloads).
 - Docker should be installed on your system. You can download it from [here](https://www.docker.com/products/docker-desktop).

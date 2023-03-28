@@ -48,7 +48,7 @@ Implement strategic SEO improvements through research, keyword incorporation, re
 - [Positive Situation]: Thorough SEO research, regular testing and audits, effective integration of keywords in page titles, URLs, and content, and successful compliance with web standards and best practices lead to a high-performance website that provides an optimal user experience, strong search engine visibility, and increased traffic, engagement, and conversions.
 - [Negative Situation]: Inadequate SEO research, ineffective integration of keywords in page titles, URLs, and content, non-compliance with web standards and best practices, and poor performance on Lighthouse audit result in poor user experience, low search engine visibility, and decreased traffic, engagement, and conversions.
 
-# GDPR and Google Analytics
+## GDPR and Google Analytics
 Story points: 5
 
 ## Initiative: Implement GDPR Compliance in Google Analytics
@@ -75,7 +75,7 @@ Effective implementation of GDPR requirements using Consent API and JavaScript i
 
 Inadequate implementation of GDPR requirements with Consent API and JavaScript in Google Analytics results in non-compliance with data privacy regulations and poor user consent management, compromising user trust and potentially leading to legal consequences.
 
-# Web Accessibility
+## Web Accessibility
 **Story Points:** 13
 
 ## Initiative: Comprehensive Web Accessibility Improvement

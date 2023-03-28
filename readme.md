@@ -63,3 +63,6 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
+
+- [DevOps developer deployment guide](https://github.com/Swapnil62/mywebclass-simulation/blob/Sprint1-dev/Sprint1/DevOps_Developer_Deployment_guide.md)
+- [Our Website](https://swapnil62.github.io/mywebclass-simulation/Sprint1/theme/index.html)
